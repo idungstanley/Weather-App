@@ -1,0 +1,36 @@
+.card {
+ width: 100%;
+ border: 2px solid black;
+ display: flex;
+ height: auto;
+}
+
+.coa {
+ width: 50%;
+}
+
+.firstSection {
+ width: 50%;
+}
+
+.secondSection {
+ width: 50%;
+}
+
+.countryName {
+ font-weight: 800;
+ font-size: 20px;
+}
+
+.flags {
+ width: 50%;
+}
+
+button {
+ width: max-content;
+ padding: 2px;
+ height: fit-content;
+ border-radius: 3px;
+ border: none;
+ background-color: blueviolet;
+}
