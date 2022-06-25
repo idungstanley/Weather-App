@@ -17,6 +17,9 @@ const DisplayCountry = () => {
           coatOfArms={eachCountry.coatOfArms}
           continents={eachCountry.continents}
           flags={eachCountry.flags}
+          id={eachCountry.id}
+          lat={eachCountry.lat}
+          lon={eachCountry.lon}
         />
       ))}
     </section>

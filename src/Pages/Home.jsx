@@ -1,6 +1,5 @@
 import React from 'react';
 import Search from '../Component/Search/Search';
-import getCountryData from '../service/ApiRequest';
 
 const Home = () => (
   <>
@@ -8,6 +7,5 @@ const Home = () => (
     <Search />
   </>
 );
-getCountryData();
 
 export default Home;
