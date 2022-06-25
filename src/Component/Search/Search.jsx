@@ -1,26 +1,15 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import { MdOutlineLocationSearching } from 'react-icons/md';
-import { loadApiData } from '../../redux/SearchApi';
-import DisplayCountry from '../Country/DisplayCountry';
+import PerCountry from '../Card/PerCountry';
 
-const Search = () => {
-  const dispatch = useDispatch();
-  const regionData = useSelector((state) => state.ApiReducer);
-  useEffect(() => {
-    if (regionData.length === 0) {
-      dispatch(loadApiData());
-    }
-  });
-  return (
-    <form>
-      <input type="search" name="" id="" />
-      <button type="submit">
-        <MdOutlineLocationSearching />
-      </button>
-      <DisplayCountry />
-    </form>
-  );
-};
+const Search = () => (
+  <form>
+    <input type="search" name="" id="" />
+    <button type="submit">
+      <MdOutlineLocationSearching />
+    </button>
+    <PerCountry />
+  </form>
+);
 
 export default Search;

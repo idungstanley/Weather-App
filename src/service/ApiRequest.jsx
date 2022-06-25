@@ -13,7 +13,7 @@ const getCountryData = async () => {
 };
 
 export const fetchDetails = async (lat, lon) => {
-  const details = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${process.env.REACT_WEATHERAPP_KEY}`;
+  const details = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_KEY}`;
   const fetchApiDetails = new FetchRequest({ url: details });
   try {
     const data = await fetchApiDetails.call();
