@@ -3,9 +3,11 @@ import { useDispatch } from 'react-redux';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import useRegion from '../../hooks/useRegion';
 import { getDetails } from '../../redux/Polution';
+import Details from '../Details/Details';
 import './card.css';
 
 const PerCountry = () => {
+  Details();
   const dispatch = useDispatch();
   const { region } = useRegion();
   const handleClick = (lat, lon) => {
