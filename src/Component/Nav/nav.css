@@ -4,7 +4,7 @@
 
 .link {
   list-style: none;
-  color: white;
+  color: black;
 }
 
 .container {
@@ -12,8 +12,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: blueviolet;
+  background-color: white;
   height: 50px;
+  padding: 5px;
 }
 
 h1 {

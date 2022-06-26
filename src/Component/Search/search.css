@@ -3,6 +3,12 @@
   height: 30px;
 }
 
+.search:focus {
+  outline: none;
+  border: none;
+}
+
 form {
   width: 100%;
 }
+
