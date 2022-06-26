@@ -1,13 +1,13 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { BiCaretLeft } from "react-icons/bi";
-import "./details.css";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { BiCaretLeft } from 'react-icons/bi';
+import './details.css';
 
 const Details = () => {
   const navigate = useNavigate();
   const backBtn = () => {
-    navigate('/')
+    navigate('/');
   };
   const data = useSelector((state) => state.airPollution);
   const {

@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Navbar from "./Component/Nav/Navbar";
-import Details from "./Component/Details/Details";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Navbar from './Component/Nav/Navbar';
+import Details from './Component/Details/Details';
 
 function WeatherApp() {
   return (

@@ -26,7 +26,7 @@
     "style": "npx stylelint \"**/*.{css,scss}\"",
     "eslint": "npx eslint .",
     "esfix": "npx eslint . --fix",
-    "rfix": "npx eslint . --ext .jsx --fix"
+    "rfix": "npx eslint . --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
