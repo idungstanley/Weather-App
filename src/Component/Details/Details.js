@@ -7,7 +7,7 @@ import "./details.css";
 const Details = () => {
   const navigate = useNavigate();
   const backBtn = () => {
-    console.log("st");
+    navigate('/')
   };
   const data = useSelector((state) => state.airPollution);
   const {
