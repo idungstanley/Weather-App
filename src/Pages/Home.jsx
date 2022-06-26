@@ -12,6 +12,7 @@ const Home = () => {
   }, [getvalue]);
 
   const handleChange = (e) => {
+    e.preventDefault();
     setGetvalue(e.target.value);
   };
 
