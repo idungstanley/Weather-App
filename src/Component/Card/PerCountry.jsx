@@ -1,17 +1,18 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import useRegion from '../../hooks/useRegion';
 import { getDetails } from '../../redux/Polution';
-import Details from '../Details/Details';
 import './card.css';
 
 const PerCountry = () => {
-  Details();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { region } = useRegion();
   const handleClick = (lat, lon) => {
     dispatch(getDetails(lat, lon));
+    navigate('/Countries');
   };
   return (region.map(
     ({

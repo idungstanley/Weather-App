@@ -1,9 +1,15 @@
 /*eslint-disable*/
 import React from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { BiCaretLeft } from "react-icons/bi";
+import "./details.css";
 
 const Details = () => {
+  const navigate = useNavigate();
+  const backBtn = () => {
+    console.log("st");
+  };
   const data = useSelector((state) => state.airPollution);
   const {
     carbon,
@@ -17,40 +23,40 @@ const Details = () => {
   } = data;
   return (
     <>
-      <BiCaretLeft />
+      <BiCaretLeft onClick={backBtn} />
       <header>
         <h2>Pollutant components</h2>
       </header>
-      <article>
-        <div>
+      <article className="container-p">
+        <div className="flex">
           <p> Carbon monoxide (CO)</p>
           <p>{carbon}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Nitrogen monoxide (NO)</p>
           <p>{nitrogenO}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Nitrogen dioxide (NO2)</p>
           <p>{nitrogen}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Ozone (O3)</p>
           <p>{ozone}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Sulphur dioxide (SO2)</p>
           <p>{sulphur}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Suspended Particles (Pm2.5)</p>
           <p>{sp}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Suspended Particles (Pm10)</p>
           <p>{suspendedP}</p>
         </div>
-        <div>
+        <div className="flex">
           <p> Ammonia (NH3)</p>
           <p>{ammonia}</p>
         </div>

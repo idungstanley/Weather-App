@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import Navbar from './Component/Nav/Navbar';
-import Check from './Pages/Check';
-import Details from './Component/Details/Details';
+/*eslint-disable*/
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Navbar from "./Component/Nav/Navbar";
+import Details from "./Component/Details/Details";
 
 function WeatherApp() {
   return (

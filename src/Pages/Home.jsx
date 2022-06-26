@@ -16,10 +16,9 @@ const dispatch = useDispatch();
   };
 
   return (
-    <>
-      <div>Testing routes</div>
+    <main>
       <Search getvalue={getvalue} onChange={(e) => handleChange(e)} />
-    </>
+    </main>
   );
 };
 

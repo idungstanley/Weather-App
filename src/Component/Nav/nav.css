@@ -1,0 +1,19 @@
+.link-container {
+ text-decoration: none;
+}
+
+.link {
+ list-style: none;
+ color: white;
+}
+.container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: blueviolet;
+ height: 50px;
+}
+
+h1 {
+color: white;
+}
