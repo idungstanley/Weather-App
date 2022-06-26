@@ -2,10 +2,14 @@ import getCountryData from '../service/ApiRequest';
 
 // Actions
 const CONTINENT = 'weather/searchApi/CONTINENT';
+const SEARCH = 'weather/searchApi/SEARCH';
+
 // Reducer
 const ApiReducer = (state = [], action = {}) => {
   switch (action.type) {
     case CONTINENT:
+      return action.payload;
+    case SEARCH:
       return action.payload;
     default:
       return state;

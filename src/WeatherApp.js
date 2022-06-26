@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Navbar from './Component/Nav/Navbar';
 import Check from './Pages/Check';
+import Details from './Component/Details/Details';
 
 function WeatherApp() {
   return (
@@ -11,7 +12,7 @@ function WeatherApp() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/check" element={<Check />} />
+          <Route path="/Countries" element={<Details />} />
         </Routes>
       </Router>
     </main>

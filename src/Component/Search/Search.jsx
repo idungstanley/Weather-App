@@ -1,10 +1,13 @@
-import React from 'react';
-import { MdOutlineLocationSearching } from 'react-icons/md';
-import PerCountry from '../Card/PerCountry';
+/*eslint-disable*/
 
-const Search = () => (
+import React from "react";
+import PropTypes from "prop-types";
+import { MdOutlineLocationSearching } from "react-icons/md";
+import PerCountry from "../Card/PerCountry";
+
+const Search = ({ getvalue, onChange }) => (
   <form>
-    <input type="search" name="" id="" />
+    <input type="search" name="" id="" value={getvalue} onChange={onChange} />
     <button type="submit">
       <MdOutlineLocationSearching />
     </button>
@@ -12,4 +15,8 @@ const Search = () => (
   </form>
 );
 
+Search.propTypes = {
+  query: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 export default Search;

@@ -14,7 +14,13 @@ const detailsApi = (state = {}, action = {}) => {
 
 export const getDetails = (lat, lon) => async (dispatch) => {
   const fetchDetail = await fetchDetails(lat, lon);
-  dispatch({ type: DETAILS, payload: fetchDetail });
+  const { main, components, dt } = fetchDetail.list[0];
+  const filterData = {
+    aqi: main.aqi,
+    components,
+    dt,
+  };
+  dispatch({ type: DETAILS, payload: filterData });
 };
 
 export default detailsApi;
