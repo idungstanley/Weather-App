@@ -1,9 +1,7 @@
-/*eslint-disable*/
-
-import React from "react";
-import PropTypes from "prop-types";
-import './search.css'
-import PerCountry from "../Card/PerCountry";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './search.css';
+import PerCountry from '../Card/PerCountry';
 
 const Search = ({ getvalue, onChange }) => (
   <form>
