@@ -1,5 +1,4 @@
 import getCountryData from '../service/ApiRequest';
-
 // Actions
 const CONTINENT = 'weather/searchApi/CONTINENT';
 const SEARCH = 'weather/searchApi/SEARCH';
