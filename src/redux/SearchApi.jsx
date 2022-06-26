@@ -1,8 +1,9 @@
-import getCountryData from '../service/ApiRequest';
+/*eslint-disable*/
+import getCountryData from "../service/ApiRequest";
 
 // Actions
-const CONTINENT = 'weather/searchApi/CONTINENT';
-const SEARCH = 'weather/searchApi/SEARCH';
+const CONTINENT = "weather/searchApi/CONTINENT";
+const SEARCH = "weather/searchApi/SEARCH";
 
 // Reducer
 const ApiReducer = (state = [], action = {}) => {
@@ -41,9 +42,18 @@ export const loadApiData = () => async (dispatch) => {
       continents,
       flags: flags.png,
       id,
-    }),
+    })
   );
   dispatch({ type: CONTINENT, payload: filterRegionData });
+};
+
+export const searchCountry = (getvalue) => (dispatch, getState) => {
+  const { countries } = getState();
+  const AllCountries = countries;
+  const filteredArr = AllCountries.filter(({ countryName }) =>
+    countryName.toLowerCase().includes(getvalue.toLowerCase())
+  );
+  dispatch({ type: SEARCH, payload: filteredArr });
 };
 
 export default ApiReducer;
