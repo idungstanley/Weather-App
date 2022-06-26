@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render HomePage component render HomePage 1`] = `
+<form>
+  <input
+    className="search"
+    id=""
+    name=""
+    placeholder="Search..."
+    type="search"
+  />
+</form>
+`;
