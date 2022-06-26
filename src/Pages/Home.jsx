@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { searchCountry } from "../redux/SearchApi";
 import Search from "../Component/Search/Search";
+import './home.css'
 
 const Home = () => {
 const dispatch = useDispatch();
