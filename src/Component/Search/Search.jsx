@@ -8,7 +8,7 @@ const Search = ({ getvalue, onChange }) => (
     <input
       className="search"
       type="search"
-      placeholder="Search..."
+      placeholder="Search for Any African country..."
       name=""
       id=""
       value={getvalue}
