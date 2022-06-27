@@ -22,7 +22,7 @@ You can read further about the air quality index and the pollutants here: [Link]
 
 ## Live Demo
 
-[Live Demo](https://62b7e9e48a18c37d65bbe1d5--stalwart-froyo-c13b9a.netlify.app)
+[Live Demo](https://ssweath-app.netlify.app/)
 
 ---
 
