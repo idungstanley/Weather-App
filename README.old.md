@@ -2,6 +2,8 @@
 
 # Air Pollution App
 
+![image](https://user-images.githubusercontent.com/70589265/176145789-d730049a-c92d-4205-b0be-c3f360ee846a.png)
+
 Air Pollution App let's the user be informed at any time of the air condition of the countries in the world. Offering a comfortable and accurate search by region, and a search bar to find the exact country the user is looking for!
 
 You can read further about the air quality index and the pollutants here: [Link](https://en.wikipedia.org/wiki/Air_quality_index#CAQI).
