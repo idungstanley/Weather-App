@@ -21,8 +21,8 @@ const Details = () => {
     ammonia,
   } = data;
   return (
-    <>
-      <BiCaretLeft onClick={backBtn} />
+    <section className="table">
+      <BiCaretLeft onClick={backBtn} size={35} />
       <header>
         <h2>Pollutant components</h2>
       </header>
@@ -60,7 +60,7 @@ const Details = () => {
           <p>{ammonia}</p>
         </div>
       </article>
-    </>
+    </section>
   );
 };
 
