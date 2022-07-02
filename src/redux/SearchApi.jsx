@@ -18,6 +18,7 @@ const ApiReducer = (state = [], action = {}) => {
 // Action creation
 export const loadApiData = () => async (dispatch) => {
   const RegionApi = await getCountryData();
+  console.log(RegionApi);
   const filterRegionData = RegionApi.map(
     ({
       name: countryName,
