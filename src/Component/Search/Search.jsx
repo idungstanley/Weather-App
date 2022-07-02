@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './search.css';
-import PerCountry from '../Card/PerCountry';
 
 const Search = ({ getvalue, onChange }) => (
   <form>
@@ -14,7 +13,6 @@ const Search = ({ getvalue, onChange }) => (
       value={getvalue}
       onChange={onChange}
     />
-    <PerCountry />
   </form>
 );
 

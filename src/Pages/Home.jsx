@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { searchCountry } from '../redux/SearchApi';
 import Search from '../Component/Search/Search';
 import './home.css';
+import PerCountry from '../Component/Card/PerCountry';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const Home = () => {
   return (
     <main>
       <Search getvalue={getvalue} onChange={(e) => handleChange(e)} />
+      <PerCountry />
     </main>
   );
 };

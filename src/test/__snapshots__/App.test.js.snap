@@ -9,9 +9,10 @@ Object {
         <div
           class="container"
         >
-          <h1>
-            Country Population
-          </h1>
+          <img
+            alt="logo"
+            src="weather-logo.png"
+          />
           <ul
             class="link-container"
           >
@@ -32,7 +33,7 @@ Object {
               class="search"
               id=""
               name=""
-              placeholder="Search..."
+              placeholder="Search for Any African country..."
               type="search"
               value=""
             />
@@ -46,9 +47,10 @@ Object {
       <div
         class="container"
       >
-        <h1>
-          Country Population
-        </h1>
+        <img
+          alt="logo"
+          src="weather-logo.png"
+        />
         <ul
           class="link-container"
         >
@@ -69,7 +71,7 @@ Object {
             class="search"
             id=""
             name=""
-            placeholder="Search..."
+            placeholder="Search for Any African country..."
             type="search"
             value=""
           />

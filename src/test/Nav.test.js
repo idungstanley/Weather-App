@@ -14,8 +14,7 @@ describe('Render components', () => {
             <Navbar />
           </Provider>
         </Router>,
-      )
-      .toJSON();
+      ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

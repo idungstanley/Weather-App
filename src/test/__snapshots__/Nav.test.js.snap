@@ -4,9 +4,10 @@ exports[`Render components render Nav 1`] = `
 <div
   className="container"
 >
-  <h1>
-    Country Population
-  </h1>
+  <img
+    alt="logo"
+    src="weather-logo.png"
+  />
   <ul
     className="link-container"
   >
